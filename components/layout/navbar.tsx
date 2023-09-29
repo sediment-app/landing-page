@@ -20,12 +20,12 @@ export default function NavBar() {
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
               src="/logo.png"
-              alt="Precedent logo"
+              alt="Logo"
               width="30"
               height="30"
-              className="mr-2 rounded-sm"
+              className="mr-2"
             ></Image>
-            <p>Precedent</p>
+            <p>[Cool Name Will Go Here]</p>
           </Link>
         </div>
       </div>

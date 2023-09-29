@@ -4,7 +4,6 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { BellDot } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { confetti } from "tsparticles-confetti";
-import Modal from "../shared/modal";
 
 const WaitlistForm = () => {
   const [email, setEmail] = useState("");
@@ -40,14 +39,14 @@ const WaitlistForm = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="grow rounded-full border border-gray-300 bg-transparent bg-white text-gray-600 shadow-sm outline-none transition-colors hover:border-gray-400"
+              className="grow rounded-full border border-gray-300 bg-transparent bg-white text-gray-600 shadow-sm transition-colors hover:border-gray-400 px-4 ring-0 focus:ring-0 focus-visible:ring-0 focus:border-gray-400"
             />
             <button
               type="submit"
-              className="absolute bottom-0 right-0 top-0 m-1 flex max-w-fit items-center justify-center space-x-2 rounded-full bg-gray-900 px-5 py-2 text-sm text-gray-100"
+              className="absolute bottom-0 right-0 top-0 m-1 flex max-w-fit items-center justify-center space-x-2 rounded-full bg-blue-950 px-5 py-2 text-sm text-gray-100"
             >
-              <span>Join the Waitlist</span>
-              <BellDot size="16" />
+              <span className="font-medium">Join the Waitlist</span>
+              <BellDot size="16" strokeWidth={2.75} className="hidden sm:block" />
             </button>
           </div>
         </form>
