@@ -5,17 +5,17 @@ import { sfPro, inter } from "./fonts";
 import Navbar from "@/components/layout/navbar";
 
 export const metadata = {
-  title: "The Budgeting Card",
+  title: "Sediment - The Budgeting Card",
   description:
     "Bridge the banking and budgeting gap with the only debit card that sticks to your budget.",
   twitter: {
     card: "summary_large_image",
-    title: "The Budgeting Card",
+    title: "Sediment - The Budgeting Card",
     description:
       "Bridge the banking and budgeting gap with the only debit card that sticks to your budget",
     creator: "@kylerummens",
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL("https://getsediment.dev"),
   themeColor: "#FFF",
 };
 

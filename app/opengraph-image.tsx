@@ -2,7 +2,7 @@
 import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
-export const alt = "The Budgeting Card";
+export const alt = "Sediment - The Budgeting Card";
 export const contentType = "image/png";
 
 export default async function OG() {
@@ -42,7 +42,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          The Budget Card
+          Sediment - The Budget Card
         </h1>
       </div>
     ),
