@@ -62,7 +62,7 @@ export default async function Home() {
             Make the most out of every purchase by leveraging our transaction
             round-up feature. It automatically rounds each transaction to the
             nearest dollar, directing the spare change straight into your
-            dedicated savings account. It's like a digital piggy bank that fills
+            dedicated savings account. It&apos;s like a digital piggy bank that fills
             itself.
           </div>
         </Card>
