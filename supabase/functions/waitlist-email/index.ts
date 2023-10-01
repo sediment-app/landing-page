@@ -49,6 +49,7 @@ const handler = async (request: Request): Promise<Response> => {
     body: JSON.stringify({
       from: "kyle@getsediment.com",
       to: email,
+      bcc: "k.d.rummens@gmail.com",
       subject: "You're on the waitlist!",
       html: "<p>Hey there,</p><p>Thanks for your interest in Sediment! You're officially on the waitlist for the bank account and debit card that help you stick to your budget. I started this project with the goal of adding these simple features to my own banking, and I'm convinced that this can help others as well.</p><p>Please consider sharing Sediment with your friends and family. I believe Sediment can be a tool for people of all financial backgrounds. If you've never put together a budget and don't know where to get started, start with Sediment. If you're a pro, maybe you've had the same pain points in banking that I have. </p><p>Just like how layers of sediment in a riverbed become stone, I hope this project will be a tool for people start (or continue) adding layers to their financial foundation.</p><p>Sincerely,<p><span>Kyle Rummens</span><br><span>Founder, Sediment</span>",
     }),
