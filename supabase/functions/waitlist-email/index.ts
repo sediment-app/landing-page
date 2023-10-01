@@ -47,7 +47,7 @@ const handler = async (request: Request): Promise<Response> => {
       Authorization: `Bearer ${RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: "kyle@getsediment.com",
+      from: "Kyle Rummens <kyle@getsediment.com>",
       to: email,
       bcc: "k.d.rummens@gmail.com",
       subject: "You're on the waitlist!",
