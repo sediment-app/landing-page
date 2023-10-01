@@ -20,7 +20,7 @@ export default function NavBar() {
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
               src="/logo.png"
-              alt="Logo"
+              alt="Sediment Logo"
               width="30"
               height="30"
               className="mr-2"

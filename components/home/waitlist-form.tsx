@@ -9,7 +9,6 @@ const WaitlistForm = () => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
-  const [showModal, setShowModal] = useState(false);
 
   const supabase = createClientComponentClient();
 
@@ -22,7 +21,6 @@ const WaitlistForm = () => {
     setLoading(false);
 
     if (!error) {
-      setShowModal(true);
       await confetti({ count: 100 });
     }
   };
