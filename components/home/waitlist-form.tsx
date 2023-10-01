@@ -17,8 +17,7 @@ const WaitlistForm = () => {
     event.preventDefault();
     setLoading(true);
 
-    const error = null;
-    //const { error } = await supabase.from("waitlist").insert({ email });
+    const { error } = await supabase.from("waitlist").insert({ email });
     setStatus(error ? "error" : "success");
     setLoading(false);
 
@@ -39,14 +38,18 @@ const WaitlistForm = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="grow rounded-full border border-gray-300 bg-transparent bg-white text-gray-600 shadow-sm transition-colors hover:border-gray-400 px-4 ring-0 focus:ring-0 focus-visible:ring-0 focus:border-gray-400"
+              className="grow rounded-full border border-gray-300 bg-transparent bg-white px-4 text-gray-600 shadow-sm ring-0 transition-colors hover:border-gray-400 focus:border-gray-400 focus:ring-0 focus-visible:ring-0"
             />
             <button
               type="submit"
               className="absolute bottom-0 right-0 top-0 m-1 flex max-w-fit items-center justify-center space-x-2 rounded-full bg-blue-950 px-5 py-2 text-sm text-gray-100"
             >
               <span className="font-medium">Join the Waitlist</span>
-              <BellDot size="16" strokeWidth={2.75} className="hidden sm:block" />
+              <BellDot
+                size="16"
+                strokeWidth={2.75}
+                className="hidden sm:block"
+              />
             </button>
           </div>
         </form>
