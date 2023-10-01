@@ -32,13 +32,12 @@ export default async function OG() {
         />
         <h1
           style={{
-            fontSize: "100px",
+            fontSize: "80px",
             fontFamily: "SF Pro",
             background:
               "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
             backgroundClip: "text",
             color: "transparent",
-            lineHeight: "5rem",
             letterSpacing: "-0.02em",
           }}
         >
