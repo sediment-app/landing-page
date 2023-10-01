@@ -29,18 +29,18 @@ const WaitlistForm = () => {
     <>
       {!status && (
         <form onSubmit={handleFormSubmit}>
-          <div className="relative mx-auto flex max-w-md">
+          <div className="relative mx-auto flex max-w-md rounded-full border border-gray-300 bg-white shadow-sm transition-colors hover:border-gray-400 [&:has(input:focus)]:border-gray-400">
             <input
               type="email"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="grow rounded-full border border-gray-300 bg-transparent bg-white px-4 text-gray-600 shadow-sm ring-0 transition-colors hover:border-gray-400 focus:border-gray-400 focus:ring-0 focus-visible:ring-0"
+              className="w-0 flex-shrink grow rounded-full border-0 bg-transparent px-4 text-sm text-gray-600 outline-none ring-0 focus:ring-0 focus-visible:ring-0 sm:text-base"
             />
             <button
               type="submit"
-              className="absolute bottom-0 right-0 top-0 m-1 flex max-w-fit items-center justify-center space-x-2 rounded-full bg-blue-950 px-5 py-2 text-sm text-gray-100"
+              className="my-1 mr-1 flex max-w-fit items-center justify-center space-x-2 whitespace-nowrap rounded-full bg-blue-950 px-3 py-2 text-xs text-gray-100 sm:px-5 sm:text-sm"
             >
               <span className="font-medium">Join the Waitlist</span>
               <BellDot
