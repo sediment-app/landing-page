@@ -98,7 +98,7 @@ export default async function Home() {
       >
         <div className="text-2xl text-gray-700">The Basics</div>
         <div className="text-lg text-gray-500">
-          It's not a bank account without these features
+          It&apos;s not a bank account without these features
         </div>
       </div>
       <div className="mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
@@ -117,7 +117,7 @@ export default async function Home() {
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
         <div className="text-2xl text-gray-700">Security and Compliance</div>
-        <div className="text-lg text-gray-500">We've got your back</div>
+        <div className="text-lg text-gray-500">We&apos;ve got your back</div>
       </div>
       <div className="mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
         <Card>
