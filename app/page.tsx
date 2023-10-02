@@ -96,7 +96,7 @@ export default async function Home() {
         className="mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
-        <div className="text-2xl text-gray-700">Bread and Butter</div>
+        <div className="text-2xl text-gray-700">The Basics</div>
         <div className="text-lg text-gray-500">
           It's not a bank account without these features
         </div>
