@@ -1,4 +1,0 @@
-Sitemap: https://getsediment.com/sitemap.xml
-
-User-agent: *
-Disallow: /api

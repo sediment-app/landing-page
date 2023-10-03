@@ -32,7 +32,7 @@ export default async function OG() {
         />
         <h1
           style={{
-            fontSize: "80px",
+            fontSize: "70px",
             fontFamily: "SF Pro",
             background:
               "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
@@ -41,7 +41,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Sediment - The Budget Card
+          Sediment - The Budgeting Card
         </h1>
       </div>
     ),
