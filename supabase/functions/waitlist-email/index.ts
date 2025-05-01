@@ -1,16 +1,17 @@
-import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+// Setup type definitions for built-in Supabase Runtime APIs
+import "jsr:@supabase/functions-js/edge-runtime.d.ts"
 
 type InsertPayload = {
   type: "INSERT";
   table: string;
   schema: string;
-  record: TableRecord<T>;
+  record: { email: string };
   old_record: null;
 };
 
-const handler = async (request: Request): Promise<Response> => {
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+
+Deno.serve(async (request) => {
   if (request.method !== "POST") {
     return new Response(JSON.stringify({ error: "Method not allowed" }), {
       status: 405,
@@ -32,6 +33,7 @@ const handler = async (request: Request): Promise<Response> => {
     }
     email = body.record.email;
   } catch (err) {
+    console.error(err);
     return new Response(JSON.stringify({ error: "Invalid request" }), {
       status: 400,
       headers: {
@@ -65,6 +67,4 @@ const handler = async (request: Request): Promise<Response> => {
       "Content-Type": "application/json",
     },
   });
-};
-
-serve(handler);
+})
