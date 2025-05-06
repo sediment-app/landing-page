@@ -108,9 +108,10 @@ export default async function Home() {
           </div>
           <div className="text-gray-500">
             Set budgets within your checking account by category. Choose between
-            soft budgets that warn you when you're over budget and hard budgets
-            that decline transactions exceeding your set limit. Enjoy real-time
-            balance updates per category and flexible budget intervals.
+            soft budgets that warn you when you&apos;re over budget and hard
+            budgets that decline transactions exceeding your set limit. Enjoy
+            real-time balance updates per category and flexible budget
+            intervals.
           </div>
         </Card>
         <Card>
