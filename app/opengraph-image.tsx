@@ -22,17 +22,17 @@ export default async function OG() {
           justifyContent: "center",
           backgroundColor: "white",
           backgroundImage:
-            "linear-gradient(to bottom right, #E0E7FF 25%, #ffffff 50%, #CFFAFE 75%)",
+            "linear-gradient(to bottom right, #fcbbbb 10%, #ffffff 50%, #CFFAFE 85%)",
         }}
       >
         <img
           src={new URL("../public/logo.png", import.meta.url).toString()}
           alt="Sediment Logo"
-          tw="w-20 h-20 mb-4 opacity-95"
+          tw="w-32 h-32 mb-4 opacity-95"
         />
         <h1
           style={{
-            fontSize: "70px",
+            fontSize: "90px",
             fontFamily: "SF Pro",
             background:
               "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
@@ -41,8 +41,21 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Sediment - The Budgeting Card
+          Sediment
         </h1>
+        <h2
+          style={{
+            fontSize: "40px",
+            fontFamily: "SF Pro",
+            background:
+              "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
+            backgroundClip: "text",
+            color: "transparent",
+            letterSpacing: "-0.02em",
+          }}
+        >
+          The Bank Account That Manages Your Money for You
+        </h2>
       </div>
     ),
     {
