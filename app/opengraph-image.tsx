@@ -2,7 +2,8 @@
 import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
-export const alt = "Sediment - The Budgeting Card";
+export const alt =
+  "Sediment - The Bank Account That Manages Your Money for You";
 export const contentType = "image/png";
 
 export default async function OG() {
