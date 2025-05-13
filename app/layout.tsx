@@ -15,7 +15,7 @@ export const metadata = {
       "Bridge the banking and budgeting gap with the only debit card that sticks to your budget",
     creator: "@kylerummens",
   },
-  metadataBase: new URL("https://getsediment.com"),
+  metadataBase: new URL("https://sediment.money"),
   themeColor: "#FFF",
 };
 
