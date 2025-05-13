@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import cx from "classnames";
 import { sfPro, inter } from "./fonts";
 import Navbar from "@/components/layout/navbar";

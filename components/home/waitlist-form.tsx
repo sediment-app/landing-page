@@ -4,6 +4,7 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { BellDot } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { confetti } from "tsparticles-confetti";
+import { track } from "@vercel/analytics";
 
 const WaitlistForm = () => {
   const [email, setEmail] = useState("");
@@ -16,6 +17,7 @@ const WaitlistForm = () => {
     event.preventDefault();
     setLoading(true);
 
+    track("waitlist_form_submit");
     const { error } = await supabase.from("waitlist").insert({ email });
     setStatus(error ? "error" : "success");
     setLoading(false);

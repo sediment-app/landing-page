@@ -2,14 +2,7 @@ import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
 import WaitlistForm from "@/components/home/waitlist-form";
 import CheckListItem from "@/components/home/check-list-item";
-import {
-  CreditCard,
-  Sparkles,
-  HelpCircle,
-  ZapIcon,
-  SparklesIcon,
-  PiggyBank,
-} from "lucide-react";
+import { CreditCard, SparklesIcon, PiggyBank } from "lucide-react";
 
 export default async function Home() {
   return (
