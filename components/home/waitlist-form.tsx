@@ -1,6 +1,6 @@
 "use client";
 
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { createClient } from "@/lib/supabase/client";
 import { BellDot } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { confetti } from "tsparticles-confetti";
@@ -11,7 +11,7 @@ const WaitlistForm = () => {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
 
-  const supabase = createClientComponentClient();
+  const supabase = createClient();
 
   const handleFormSubmit = async (event: FormEvent) => {
     event.preventDefault();

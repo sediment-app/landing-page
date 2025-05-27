@@ -3,6 +3,7 @@ import Balancer from "react-wrap-balancer";
 import WaitlistForm from "@/components/home/waitlist-form";
 import CheckListItem from "@/components/home/check-list-item";
 import { CreditCard, SparklesIcon, PiggyBank } from "lucide-react";
+import { WaitlistCount } from "@/components/home/waitlist-count";
 
 export default async function Home() {
   return (
@@ -33,6 +34,7 @@ export default async function Home() {
           style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
         >
           <WaitlistForm />
+          <WaitlistCount />
         </div>
       </div>
       <div
