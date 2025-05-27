@@ -6,16 +6,18 @@ import Navbar from "@/components/layout/navbar";
 
 export const metadata = {
   title: "Sediment",
+
   description:
     "The bank account that manages your money for you, with checking account budgets, purpose-driven savings, and AI-powered insights.",
+
   twitter: {
     card: "summary_large_image",
     title: "Sediment",
     description: "The bank account that manages your money for you",
     creator: "@kylerummens",
   },
-  metadataBase: new URL("https://sediment.money"),
-  themeColor: "#FFF",
+
+  metadataBase: new URL("https://sediment.money")
 };
 
 export default async function RootLayout({
@@ -36,3 +38,7 @@ export default async function RootLayout({
     </html>
   );
 }
+
+export const viewport = {
+  themeColor: "#FFF"
+};

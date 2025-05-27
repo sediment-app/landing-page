@@ -5,7 +5,7 @@ import CheckListItem from "@/components/home/check-list-item";
 import { CreditCard, SparklesIcon, PiggyBank } from "lucide-react";
 import { WaitlistCount } from "@/components/home/waitlist-count";
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
       <div className="z-10 mb-20 w-full max-w-4xl px-5 xl:px-0">
