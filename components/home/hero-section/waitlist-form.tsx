@@ -6,7 +6,7 @@ import { FormEvent, useState } from "react";
 import { confetti } from "tsparticles-confetti";
 import { track } from "@vercel/analytics";
 
-const WaitlistForm = () => {
+export function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
@@ -72,6 +72,4 @@ const WaitlistForm = () => {
       )}
     </>
   );
-};
-
-export default WaitlistForm;
+}
