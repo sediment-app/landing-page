@@ -31,7 +31,7 @@ const WaitlistForm = () => {
     <>
       {!status && (
         <form onSubmit={handleFormSubmit}>
-          <div className="relative mx-auto flex max-w-md rounded-full border border-gray-300 bg-white shadow-sm transition-colors hover:border-gray-400 [&:has(input:focus)]:border-gray-400">
+          <div className="relative flex max-w-md rounded-full border border-gray-300 bg-white shadow-sm transition-colors hover:border-gray-400 [&:has(input:focus)]:border-gray-400">
             <input
               type="email"
               required
@@ -56,7 +56,7 @@ const WaitlistForm = () => {
       )}
 
       {status === "success" && (
-        <div className="mx-auto flex max-w-md items-center justify-center">
+        <div className="flex max-w-md items-center justify-start">
           <span className="text-green-600">
             Thank you for joining the waitlist!
           </span>
@@ -64,7 +64,7 @@ const WaitlistForm = () => {
       )}
 
       {status === "error" && (
-        <div className="mx-auto flex max-w-md items-center justify-center">
+        <div className="flex max-w-md items-center justify-start">
           <span className="text-red-600">
             Something went wrong. Please try again.
           </span>

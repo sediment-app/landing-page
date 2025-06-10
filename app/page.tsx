@@ -4,41 +4,71 @@ import WaitlistForm from "@/components/home/waitlist-form";
 import CheckListItem from "@/components/home/check-list-item";
 import { CreditCard, SparklesIcon, PiggyBank } from "lucide-react";
 import { WaitlistCount } from "@/components/home/waitlist-count";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <div className="z-10 mb-20 w-full max-w-4xl px-5 xl:px-0">
-        <div className="mx-auto mb-5 flex max-w-fit animate-fade-up cursor-default items-center justify-center space-x-2 overflow-hidden rounded-full border border-peach-200 bg-peach-50 px-6 py-1">
-          <p className="text-sm font-semibold text-peach-500">
-            Launching soon!
-          </p>
-        </div>
-        <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-5xl md:leading-[4rem]"
-          style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
-        >
-          <Balancer>The Bank Account That Manages Your Money for You</Balancer>
-        </h1>
-        <p
-          className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
-          style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-        >
-          <Balancer>
-            Ditch the spreadsheets. Sediment is the first checking account built
-            to automatically budget, save, and plan — for you.
-          </Balancer>
-        </p>
-        <div
-          className="mx-auto mt-6 animate-fade-up opacity-0"
-          style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-        >
-          <WaitlistForm />
-          <WaitlistCount />
+      <div className="min-h-screen overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36">
+        <div className="mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="h-full lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:items-stretch lg:gap-x-8">
+            <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col justify-center lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+              <h1
+                className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-left md:text-5xl md:leading-[4rem]"
+                style={{
+                  animationDelay: "0.15s",
+                  animationFillMode: "forwards",
+                }}
+              >
+                <Balancer>
+                  The Bank Account That Manages Your Money for You
+                </Balancer>
+              </h1>
+              <p
+                className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-left md:text-xl"
+                style={{
+                  animationDelay: "0.25s",
+                  animationFillMode: "forwards",
+                }}
+              >
+                <Balancer>
+                  Ditch the spreadsheets. Sediment is the first checking account
+                  built to automatically budget, save, and plan — for you.
+                </Balancer>
+              </p>
+              <div
+                className="mt-6 animate-fade-up opacity-0"
+                style={{
+                  animationDelay: "0.3s",
+                  animationFillMode: "forwards",
+                }}
+              >
+                <WaitlistForm />
+                <WaitlistCount />
+              </div>
+            </div>
+
+            <div className="relative mt-10 flex h-full items-center justify-center sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
+              <div
+                className="animate-fade-up opacity-0"
+                style={{
+                  animationDelay: "0.35s",
+                  animationFillMode: "forwards",
+                }}
+              >
+                <Image
+                  src="/screenshots/home.png"
+                  alt="Sediment Home"
+                  width={300}
+                  height={300}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
-        className="mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
+        className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
         <div className="text-2xl text-gray-700">
@@ -46,7 +76,7 @@ export default function Home() {
         </div>
         <div className="text-lg text-gray-500">How Sediment Works</div>
       </div>
-      <div className="mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      <div className="mx-auto mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <Card>
           <div className="flex flex-col items-center text-center">
             <div className="mb-4 rounded-full bg-peach-100 p-3">
@@ -88,7 +118,7 @@ export default function Home() {
         </Card>
       </div>
       <div
-        className="mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
+        className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
         <div className="text-2xl text-gray-700">Account Features</div>
@@ -96,7 +126,7 @@ export default function Home() {
           What makes Sediment different?
         </div>
       </div>
-      <div className="mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
+      <div className="mx-auto mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
         <Card>
           <div className="mb-3 text-lg font-medium text-gray-700">
             Budget Categories with Hard & Soft Limits
@@ -166,7 +196,7 @@ export default function Home() {
         </Card>
       </div>
       <div
-        className="mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
+        className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
         <div className="text-2xl text-gray-700">The Basics</div>
@@ -174,7 +204,7 @@ export default function Home() {
           It&apos;s not a bank account without these features
         </div>
       </div>
-      <div className="mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
+      <div className="mx-auto mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
         <Card>
           <div className="flex flex-col gap-3">
             <CheckListItem>Individual or joint account</CheckListItem>
@@ -186,13 +216,13 @@ export default function Home() {
         </Card>
       </div>
       <div
-        className="mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
+        className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
         <div className="text-2xl text-gray-700">Security and Compliance</div>
         <div className="text-lg text-gray-500">We&apos;ve got your back</div>
       </div>
-      <div className="mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
+      <div className="mx-auto mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 pb-32 md:grid-cols-2 xl:px-0">
         <Card>
           <div className="flex flex-col gap-3">
             <CheckListItem>FDIC insured</CheckListItem>
