@@ -42,7 +42,8 @@ export default function WaitlistThankYou() {
                   <ul className="list-disc pl-6">
                     <li>Cover part of our launch and compliance costs</li>
                     <li>
-                      Show potential investors there's real demand for better banking
+                      Show potential investors there&apos;s real demand for
+                      better banking
                     </li>
                   </ul>
                 </div>
@@ -58,17 +59,24 @@ export default function WaitlistThankYou() {
                 </div>
 
                 {/* Stripe Payment Element */}
-                <PaymentSection email={email} onSuccess={() => setSuccess(true)} />
+                <PaymentSection
+                  email={email}
+                  onSuccess={() => setSuccess(true)}
+                />
               </div>
             </div>
           </Card>
         ) : (
           <Card>
             <div className="space-y-3 text-center">
-              <div className="text-2xl font-bold text-green-700">Thank you!</div>
+              <div className="text-2xl font-bold text-green-700">
+                Thank you!
+              </div>
               <p className="text-gray-700">Your support has been recorded.</p>
               {email && (
-                <p className="text-sm text-gray-500">A receipt will be sent to {email}.</p>
+                <p className="text-sm text-gray-500">
+                  A receipt will be sent to {email}.
+                </p>
               )}
             </div>
           </Card>
