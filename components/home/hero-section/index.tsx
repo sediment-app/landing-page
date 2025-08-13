@@ -17,7 +17,7 @@ export function HeroSection() {
               }}
             >
               <Balancer>
-                Your bank account, finally built for real life
+                Your bank account, built for real life
               </Balancer>
             </h1>
             <p

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Sediment - Your bank account, finally built for real life";
+export const alt = "Sediment - Your bank account, built for real life";
 export const contentType = "image/png";
 
 export default async function OG() {
@@ -53,7 +53,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Your bank account, finally built for real life
+          Your bank account, built for real life
         </h2>
       </div>
     ),
