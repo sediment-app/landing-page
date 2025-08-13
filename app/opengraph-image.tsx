@@ -1,9 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt =
-  "Sediment - The Bank Account That Manages Your Money for You";
+export const alt = "Sediment - Your bank account, finally built for real life";
 export const contentType = "image/png";
 
 export default async function OG() {
@@ -27,13 +25,13 @@ export default async function OG() {
         }}
       >
         <img
-          src={new URL("../public/logo.png", import.meta.url).toString()}
+          src="https://sediment.money/logo.png"
           alt="Sediment Logo"
           tw="w-32 h-32 mb-4 opacity-95"
         />
         <h1
           style={{
-            fontSize: "90px",
+            fontSize: "100px",
             fontFamily: "SF Pro",
             background:
               "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
@@ -46,7 +44,7 @@ export default async function OG() {
         </h1>
         <h2
           style={{
-            fontSize: "40px",
+            fontSize: "55px",
             fontFamily: "SF Pro",
             background:
               "linear-gradient(to bottom right, #000000 21.66%, #78716c 86.47%)",
@@ -55,7 +53,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          The Bank Account That Manages Your Money for You
+          Your bank account, finally built for real life
         </h2>
       </div>
     ),

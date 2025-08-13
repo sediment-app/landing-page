@@ -17,7 +17,7 @@ export function HeroSection() {
               }}
             >
               <Balancer>
-                The Bank Account That Manages Your Money for You
+                Your bank account, finally built for real life
               </Balancer>
             </h1>
             <p
