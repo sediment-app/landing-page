@@ -32,11 +32,7 @@ export function WaitlistForm() {
           className="my-1 mr-1 flex max-w-fit items-center justify-center space-x-2 whitespace-nowrap rounded-full bg-blue-950 px-3 py-2 text-xs text-gray-100 sm:px-5 sm:text-sm"
         >
           <span className="font-medium">Join the Waitlist</span>
-          <BellDot
-            size="16"
-            strokeWidth={2.75}
-            className="hidden sm:block"
-          />
+          <BellDot size="16" strokeWidth={2.75} className="hidden sm:block" />
         </button>
       </div>
     </form>

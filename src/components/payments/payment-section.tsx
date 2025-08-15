@@ -11,15 +11,26 @@ const pk = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as string | undefined;
 if (!pk) {
   // This guards during runtime; we still render a helpful message.
   // eslint-disable-next-line no-console
-  console.warn("NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY is not set. Stripe Elements will not load.");
+  console.warn(
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY is not set. Stripe Elements will not load.",
+  );
 }
 
-export function PaymentSection({ email, onSuccess }: { email: string | null; onSuccess?: () => void }) {
+export function PaymentSection({
+  email,
+  onSuccess,
+}: {
+  email: string | null;
+  onSuccess?: () => void;
+}) {
   const [clientSecret, setClientSecret] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   // Memoize stripePromise so it doesn't reinitialize
-  const stripePromise = useMemo<Promise<Stripe | null>>(() => (pk ? loadStripe(pk) : Promise.resolve(null)), [pk]);
+  const stripePromise = useMemo<Promise<Stripe | null>>(
+    () => (pk ? loadStripe(pk) : Promise.resolve(null)),
+    [],
+  );
 
   useEffect(() => {
     const createIntent = async () => {
@@ -47,7 +58,8 @@ export function PaymentSection({ email, onSuccess }: { email: string | null; onS
   if (!pk) {
     return (
       <div className="rounded-md border border-yellow-300 bg-yellow-50 p-3 text-sm text-yellow-800">
-        Stripe is not configured. Please set <code>NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY</code> in your environment.
+        Stripe is not configured. Please set{" "}
+        <code>NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY</code> in your environment.
       </div>
     );
   }
@@ -67,7 +79,10 @@ export function PaymentSection({ email, onSuccess }: { email: string | null; onS
   }
 
   return (
-    <Elements stripe={stripePromise} options={{ clientSecret, appearance: { theme: "stripe" } }}>
+    <Elements
+      stripe={stripePromise}
+      options={{ clientSecret, appearance: { theme: "stripe" } }}
+    >
       <CheckoutForm email={email} onSuccess={onSuccess} />
     </Elements>
   );

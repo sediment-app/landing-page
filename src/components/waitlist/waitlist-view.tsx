@@ -1,13 +1,13 @@
 "use client";
 
-import Card from "@/components/home/card";
+import { Card } from "@/components/home/card";
 import { PaymentSection } from "@/components/payments/payment-section";
 import Link from "next/link";
 import { useState } from "react";
 
 type Props = {
   email: string | null;
-}
+};
 
 export default function WaitlistView({ email }: Props) {
   const [success, setSuccess] = useState(false);

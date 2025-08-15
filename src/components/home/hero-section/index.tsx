@@ -16,9 +16,7 @@ export function HeroSection() {
                 animationFillMode: "forwards",
               }}
             >
-              <Balancer>
-                Your bank account, built for real life
-              </Balancer>
+              <Balancer>Your bank account, built for real life</Balancer>
             </h1>
             <p
               className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-left md:text-xl"
@@ -33,7 +31,7 @@ export function HeroSection() {
               </Balancer>
             </p>
             <div
-              className="my-6 animate-fade-up opacity-0 space-y-3"
+              className="my-6 animate-fade-up space-y-3 opacity-0"
               style={{
                 animationDelay: "0.3s",
                 animationFillMode: "forwards",

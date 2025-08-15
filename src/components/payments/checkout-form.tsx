@@ -1,7 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useStripe, useElements, PaymentElement } from "@stripe/react-stripe-js";
+import {
+  useStripe,
+  useElements,
+  PaymentElement,
+} from "@stripe/react-stripe-js";
 import { createClient } from "@/lib/supabase/client";
 import { track } from "@vercel/analytics";
 
@@ -37,7 +41,9 @@ export function CheckoutForm({ email, onSuccess }: Props) {
       redirect: "if_required",
     });
 
-    const { error: supabaseError } = await supabase.from("waitlist").insert({ email });
+    const { error: supabaseError } = await supabase
+      .from("waitlist")
+      .insert({ email });
 
     if (error || supabaseError) {
       setMessage(error?.message ?? "An unexpected error occurred.");

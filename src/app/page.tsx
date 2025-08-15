@@ -1,5 +1,5 @@
-import Card from "@/components/home/card";
-import CheckListItem from "@/components/home/check-list-item";
+import { Card } from "@/components/home/card";
+import { CheckListItem } from "@/components/home/check-list-item";
 import { FeatureSections } from "@/components/home/feature-sections";
 import { HeroSection } from "@/components/home/hero-section";
 import { CreditCard, SparklesIcon, PiggyBank } from "lucide-react";

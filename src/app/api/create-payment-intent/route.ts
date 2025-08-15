@@ -5,7 +5,9 @@ const stripeSecret = process.env.STRIPE_SECRET_KEY as string | undefined;
 
 if (!stripeSecret) {
   // eslint-disable-next-line no-console
-  console.warn("STRIPE_SECRET_KEY is not set. /api/create-payment-intent will not work.");
+  console.warn(
+    "STRIPE_SECRET_KEY is not set. /api/create-payment-intent will not work.",
+  );
 }
 
 const stripe = stripeSecret ? new Stripe(stripeSecret) : (null as any);
@@ -39,6 +41,9 @@ export async function POST(req: NextRequest) {
   } catch (err: any) {
     // eslint-disable-next-line no-console
     console.error("Failed to create PaymentIntent", err);
-    return Response.json({ error: err?.message || "Server error" }, { status: 500 });
+    return Response.json(
+      { error: err?.message || "Server error" },
+      { status: 500 },
+    );
   }
 }
