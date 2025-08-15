@@ -59,6 +59,7 @@ module.exports = {
         },
       },
       colors: {
+        secondary: "#123051",
         peach: {
           50: "#fff1f1",
           100: "#ffe1e1",

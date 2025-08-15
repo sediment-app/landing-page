@@ -1,5 +1,10 @@
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
+import { Inter, DM_Serif_Text } from "next/font/google";
+
+export const dmSerifText = DM_Serif_Text({
+  weight: "400",
+  variable: "--font-dm-serif-text",
+});
 
 export const sfPro = localFont({
   src: "./SF-Pro-Display-Medium.otf",

@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import cx from "classnames";
-import { sfPro, inter } from "./fonts";
-import Navbar from "@/components/layout/navbar";
+import { dmSerifText, sfPro, inter } from "./fonts";
+import { Navbar } from "@/components/layout/navbar";
 
 export const metadata = {
   title: "Sediment",
@@ -27,7 +27,9 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cx(sfPro.variable, inter.variable)}>
+      <body
+        className={cx(dmSerifText.variable, sfPro.variable, inter.variable)}
+      >
         <div className="fixed h-screen w-full bg-gradient-to-br from-blue-50 via-white to-peach-100" />
         <Navbar />
         <main className="min-h-screen w-full">{children}</main>

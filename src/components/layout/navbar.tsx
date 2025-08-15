@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import useScroll from "@/lib/hooks/use-scroll";
 
-export default function NavBar() {
-  const scrolled = useScroll(50);
+export function Navbar() {
+  const scrolled = useScroll(0);
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function NavBar() {
               height="30"
               className="mr-2"
             ></Image>
-            <p>Sediment</p>
+            <p className="font-dm-serif-text text-secondary">Sediment</p>
           </Link>
         </div>
       </div>

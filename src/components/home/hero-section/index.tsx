@@ -10,7 +10,7 @@ export function HeroSection() {
         <div className="h-full lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:items-stretch lg:gap-x-8">
           <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col justify-center lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1
-              className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-left md:text-5xl md:leading-[4rem]"
+              className="font-dm-serif-text animate-fade-up text-center text-4xl font-bold tracking-[-0.02em] text-secondary opacity-0 drop-shadow-sm md:text-left md:text-5xl md:leading-[4rem]"
               style={{
                 animationDelay: "0.15s",
                 animationFillMode: "forwards",
@@ -19,7 +19,7 @@ export function HeroSection() {
               <Balancer>Your bank account, built for real life</Balancer>
             </h1>
             <p
-              className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-left md:text-xl"
+              className="mt-6 animate-fade-up text-center text-slate-500 opacity-0 md:text-left md:text-xl"
               style={{
                 animationDelay: "0.25s",
                 animationFillMode: "forwards",
