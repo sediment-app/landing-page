@@ -4,6 +4,7 @@ import { Inter, DM_Serif_Text } from "next/font/google";
 export const dmSerifText = DM_Serif_Text({
   weight: "400",
   variable: "--font-dm-serif-text",
+  subsets: ["latin"],
 });
 
 export const sfPro = localFont({
