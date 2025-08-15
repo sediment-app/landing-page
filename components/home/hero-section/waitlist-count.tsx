@@ -24,7 +24,7 @@ async function AsyncWaitlistCount() {
 
 function WaitlistCountContainer({ children }: PropsWithChildren) {
   return (
-    <div className="flex items-center justify-center gap-2 pt-6 md:justify-start md:pt-12">
+    <div className="flex items-center justify-center gap-2 md:justify-start">
       <span className="relative flex size-2">
         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
         <span className="relative inline-flex size-2 rounded-full bg-green-500"></span>

@@ -33,7 +33,7 @@ export function HeroSection() {
               </Balancer>
             </p>
             <div
-              className="mt-6 animate-fade-up opacity-0"
+              className="my-6 animate-fade-up opacity-0 space-y-3"
               style={{
                 animationDelay: "0.3s",
                 animationFillMode: "forwards",
@@ -41,7 +41,6 @@ export function HeroSection() {
             >
               <WaitlistForm />
               <WaitlistCount />
-              <div className="mb-6" />
             </div>
           </div>
 
