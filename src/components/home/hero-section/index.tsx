@@ -26,8 +26,8 @@ export function HeroSection() {
               }}
             >
               <Balancer>
-                Ditch the spreadsheets. Sediment is the first checking account
-                built to automatically budget, save, and plan — for you.
+                Ditch the spreadsheets. Sediment is the first bank account built
+                to automatically budget, save, and plan — for you.
               </Balancer>
             </p>
             <div

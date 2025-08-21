@@ -74,7 +74,7 @@ export function PaymentSection({
 
   if (!clientSecret) {
     return (
-      <div className="text-sm text-gray-600">Preparing secure payment...</div>
+      <div className="text-sm text-slate-600">Preparing secure payment...</div>
     );
   }
 

@@ -17,7 +17,7 @@ export default function WaitlistView({ email }: Props) {
       <div className="w-full max-w-2xl space-y-8">
         {/* Navigation */}
         <div className="pt-6 text-left">
-          <Link href="/" className="text-gray-600 hover:text-gray-800">
+          <Link href="/" className="text-slate-600 hover:text-slate-800">
             ← Go to Home
           </Link>
         </div>
@@ -35,10 +35,10 @@ export default function WaitlistView({ email }: Props) {
             <div className="space-y-6">
               {/* Benefits Section */}
               <div className="space-y-3 rounded-lg bg-blue-50 p-4">
-                <h3 className="flex items-center gap-2 font-semibold text-gray-900">
+                <h3 className="flex items-center gap-2 font-semibold text-slate-900">
                   Why We Require Payment
                 </h3>
-                <div className="space-y-2 text-sm text-gray-700">
+                <div className="space-y-2 text-sm text-slate-700">
                   <ul className="list-disc pl-6">
                     <li>Cover part of our launch and compliance costs</li>
                     <li>
@@ -49,7 +49,7 @@ export default function WaitlistView({ email }: Props) {
                 </div>
               </div>
 
-              <div className="h-px bg-gray-200" />
+              <div className="h-px bg-slate-200" />
 
               {/* Payment Form */}
               <div className="space-y-4">
@@ -72,9 +72,9 @@ export default function WaitlistView({ email }: Props) {
               <div className="text-2xl font-bold text-green-700">
                 Thank you!
               </div>
-              <p className="text-gray-700">Your support has been recorded.</p>
+              <p className="text-slate-700">Your support has been recorded.</p>
               {email && (
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-slate-500">
                   A receipt will be sent to {email}.
                 </p>
               )}

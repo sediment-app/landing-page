@@ -8,12 +8,12 @@ export const metadata = {
   title: "Sediment",
 
   description:
-    "The bank account that manages your money for you, with checking account budgets, purpose-driven savings, and AI-powered insights.",
+    "Your bank account, built for real life. With checking account budgets, purpose-driven savings, and AI-powered insights.",
 
   twitter: {
     card: "summary_large_image",
     title: "Sediment",
-    description: "The bank account that manages your money for you",
+    description: "Your bank account, built for real life",
     creator: "@kylerummens",
   },
 

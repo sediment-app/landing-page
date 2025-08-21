@@ -12,11 +12,11 @@ export function Navbar() {
       <div
         className={`fixed top-0 flex w-full justify-center ${
           scrolled
-            ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
+            ? "border-b border-slate-200 bg-white/50 backdrop-blur-xl"
             : "bg-white/0"
         } z-30 transition-all`}
       >
-        <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-between">
+        <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-center md:justify-start">
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
               src="/logo.png"

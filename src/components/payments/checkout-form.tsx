@@ -72,7 +72,7 @@ export function CheckoutForm({ email, onSuccess }: Props) {
       </button>
 
       {message && (
-        <div className="text-sm text-gray-700" role="alert">
+        <div className="text-sm text-slate-700" role="alert">
           {message}
         </div>
       )}
