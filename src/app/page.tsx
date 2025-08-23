@@ -1,5 +1,6 @@
 import { Card } from "@/components/home/card";
 import { CheckListItem } from "@/components/home/check-list-item";
+import { ComparisonSection } from "@/components/home/comparison-section";
 import { FeatureSections } from "@/components/home/feature-sections";
 import { HeroSection } from "@/components/home/hero-section";
 import { CreditCard, SparklesIcon, PiggyBank } from "lucide-react";
@@ -8,17 +9,18 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <ComparisonSection />
       {/*<FeatureSections />*/}
       <div
         className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
-        <div className="text-2xl text-slate-700">
-          Not just a bank. Not just a budgeting app.
+        <div className="text-2xl text-slate-700">Account Features</div>
+        <div className="text-lg text-slate-500">
+          What makes Sediment different?
         </div>
-        <div className="text-lg text-slate-500">How Sediment Works</div>
       </div>
-      <div className="mx-auto mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
+      <div className="mx-auto mb-6 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
         <Card>
           <div className="flex flex-col items-center text-center">
             <div className="mb-4 rounded-full bg-peach-100 p-3">
@@ -58,15 +60,6 @@ export default function Home() {
             </div>
           </div>
         </Card>
-      </div>
-      <div
-        className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
-        style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
-      >
-        <div className="text-2xl text-slate-700">Account Features</div>
-        <div className="text-lg text-slate-500">
-          What makes Sediment different?
-        </div>
       </div>
       <div className="mx-auto mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
         <Card>

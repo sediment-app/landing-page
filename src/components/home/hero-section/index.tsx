@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <div className="min-h-screen overflow-hidden py-24 sm:py-32 lg:pb-32 xl:pb-36">
+    <div className="min-h-screen overflow-hidden py-24 sm:py-32 md:min-h-0 lg:pb-32 xl:pb-36">
       <div className="mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="h-full lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:items-stretch lg:gap-x-8">
           <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col justify-center lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
