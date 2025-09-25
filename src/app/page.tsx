@@ -10,70 +10,16 @@ export default function Home() {
     <>
       <HeroSection />
       <ComparisonSection />
-      {/*<FeatureSections />*/}
+      <FeatureSections />
       <div
-        className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
+        className="mx-auto mb-6 mt-10 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
-        <div className="text-2xl text-slate-700">Account Features</div>
-        <div className="text-lg text-slate-500">
-          What makes Sediment different?
+        <div className="font-dm-serif-text text-2xl text-secondary">
+          More Features
         </div>
       </div>
-      <div className="mx-auto mb-6 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-3 xl:px-0">
-        <Card>
-          <div className="flex flex-col items-center text-center">
-            <div className="mb-4 rounded-full bg-peach-100 p-3">
-              <CreditCard className="h-8 w-8 text-peach-500" />
-            </div>
-            <div className="mb-3 text-lg font-medium text-slate-700">
-              Structured Checking
-            </div>
-            <div className="text-slate-500">
-              Hard/soft budgets built into your debit card
-            </div>
-          </div>
-        </Card>
-        <Card>
-          <div className="flex flex-col items-center text-center">
-            <div className="mb-4 rounded-full bg-peach-100 p-3">
-              <PiggyBank className="h-8 w-8 text-peach-500" />
-            </div>
-            <div className="mb-3 text-lg font-medium text-slate-700">
-              Purpose-Driven Savings
-            </div>
-            <div className="text-slate-500">
-              Every bill, goal, and emergency has a smart account
-            </div>
-          </div>
-        </Card>
-        <Card>
-          <div className="flex flex-col items-center text-center">
-            <div className="mb-4 rounded-full bg-peach-100 p-3">
-              <SparklesIcon className="h-8 w-8 text-peach-500" />
-            </div>
-            <div className="mb-3 text-lg font-medium text-slate-700">
-              AI Assistant
-            </div>
-            <div className="text-slate-500">
-              A copilot that helps set up budgets, savings, and more
-            </div>
-          </div>
-        </Card>
-      </div>
       <div className="mx-auto mb-20 grid w-full max-w-screen-lg animate-fade-up grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:px-0">
-        <Card>
-          <div className="mb-3 text-lg font-medium text-slate-700">
-            Budget Categories with Hard & Soft Limits
-          </div>
-          <div className="text-slate-500">
-            Set budgets within your checking account by category. Choose between
-            soft budgets that warn you when you&apos;re over budget and hard
-            budgets that decline transactions exceeding your set limit. Enjoy
-            real-time balance updates per category and flexible budget
-            intervals.
-          </div>
-        </Card>
         <Card>
           <div className="mb-3 text-lg font-medium text-slate-700">
             Transaction Round-Ups & Debit Card Controls
@@ -83,39 +29,6 @@ export default function Home() {
             difference to your chosen savings account. Take control of your
             spending with card freeze/unfreeze, spend limits, merchant category
             blocking, and real-time transaction alerts.
-          </div>
-        </Card>
-        <Card>
-          <div className="mb-3 text-lg font-medium text-slate-700">
-            Intent-Based Savings Accounts
-          </div>
-          <div className="text-slate-500">
-            Create purpose-driven accounts for bills, planned expenses, goals,
-            and emergencies. Each account type comes with specialized features
-            like due date tracking, target savings amounts, progress tracking,
-            and smart pacing recommendations.
-          </div>
-        </Card>
-        <Card>
-          <div className="mb-3 text-lg font-medium text-slate-700">
-            Asset-Aware Management
-          </div>
-          <div className="text-slate-500">
-            Link savings accounts to real-world assets like vehicles, homes, and
-            more. Access specialized features including document storage,
-            payment forecasts, maintenance tracking, event reminders, and asset
-            lifecycle planning.
-          </div>
-        </Card>
-        <Card>
-          <div className="mb-3 text-lg font-medium text-slate-700">
-            AI Assistant That Takes Action
-          </div>
-          <div className="text-slate-500">
-            Get intelligent, context-aware support throughout your experience.
-            Beyond answering questions about budgeting and savings strategies,
-            our AI can help you set up accounts, move money, adjust budgets, and
-            proactively suggest actions based on your behavior.
           </div>
         </Card>
         <Card>
@@ -130,6 +43,7 @@ export default function Home() {
           </div>
         </Card>
       </div>
+      {/*
       <div
         className="mx-auto mb-6 w-full max-w-5xl animate-fade-up px-5 opacity-0 xl:px-0"
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -166,7 +80,7 @@ export default function Home() {
             <CheckListItem>Data encryption</CheckListItem>
           </div>
         </Card>
-      </div>
+      </div>*/}
     </>
   );
 }

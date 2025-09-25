@@ -38,7 +38,7 @@ export function HeroSection() {
               }}
             >
               <WaitlistForm />
-              <WaitlistCount />
+              {/* <WaitlistCount /> */}
             </div>
           </div>
 
