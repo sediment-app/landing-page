@@ -9,9 +9,9 @@ export function StructuredCheckingSection() {
         </h2>
         <p className="text-lg leading-8 text-slate-500">
           Set budgets within your checking account by category. Choose between
-          soft budgets that warn you when you're over budget and hard budgets
-          that decline transactions exceeding your set limit. Enjoy real-time
-          balance updates per category and flexible budget intervals.
+          soft budgets that warn you when you&apos;re over budget and hard
+          budgets that decline transactions exceeding your set limit. Enjoy
+          real-time balance updates per category and flexible budget intervals.
         </p>
       </div>
       <div className="flex items-center justify-center">
