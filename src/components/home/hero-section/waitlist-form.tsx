@@ -30,8 +30,8 @@ export function WaitlistForm() {
   return (
     <>
       {!status && (
-        <form onSubmit={handleFormSubmit}>
-          <div className="relative flex max-w-md rounded-full border border-slate-300 bg-white shadow-sm transition-colors hover:border-slate-400 [&:has(input:focus)]:border-slate-400">
+        <form onSubmit={handleFormSubmit} className="flex justify-center md:justify-start">
+          <div className="relative flex grow max-w-md rounded-full border border-slate-300 bg-white shadow-sm transition-colors hover:border-slate-400 [&:has(input:focus)]:border-slate-400">
             <input
               type="email"
               required
