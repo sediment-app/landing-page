@@ -9,18 +9,6 @@ export function HeroSection() {
       <div className="mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="h-full lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:items-stretch lg:gap-x-8">
           <div className="relative z-10 mx-auto flex h-full max-w-2xl flex-col justify-center lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-            <div
-              className="mb-4 animate-fade-up opacity-0 flex justify-center md:justify-start"
-              style={{
-                animationDelay: "0.1s",
-                animationFillMode: "forwards",
-              }}
-            >
-              <div className="inline-flex items-center justify-center gap-1.5 rounded-full border-pink-700 bg-pink-700/10 px-2 py-1.5 text-xs font-medium text-pink-700">
-                <SparklesIcon size={14} />
-                Now in Private Beta
-              </div>
-            </div>
             <h1
               className="font-dm-serif-text animate-fade-up text-center text-4xl font-bold tracking-[-0.02em] text-secondary opacity-0 drop-shadow-sm md:text-left md:text-5xl md:leading-[4rem]"
               style={{
