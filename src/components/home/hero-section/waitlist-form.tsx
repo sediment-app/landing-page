@@ -3,19 +3,14 @@
 import { BellDot } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { track } from "@vercel/analytics";
-import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 
 export function WaitlistForm() {
   const [email, setEmail] = useState("");
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
-
-  const supabase = createClient();
 
   const handleFormSubmit = async (event: FormEvent) => {
     event.preventDefault();
-    setLoading(true);
 
     track("waitlist_form_submit");
     router.push(`/waitlist?email=${encodeURIComponent(email)}`);
